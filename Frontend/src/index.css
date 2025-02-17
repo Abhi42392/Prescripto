@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+*{
+    font-family: Outfit;
+}
+.active hr{
+    @apply block
+}
+
+.header{
+   
+    background-color: #5f6FFF;
+}
+
+::-webkit-scrollbar{
+    @apply hidden
+}
+
+.speciality-menu .active p{
+    background-color: #5f6FFF;
+    color: white;
+}
+.speciality-menu p:hover{
+    background-color: #5f6FFF;
+    color: white;
+}
+
+
+@media (max-width: 900px) { /* For mobile devices */
+    .overflow {
+      overflow-x: scroll;
+      white-space: nowrap;
+      width: 100%;
+      flex-direction: row;
+    }
+    .overflow p{
+        padding: 8px;
+    }
+    .speciality-menu{
+        padding: 2px;
+    }
+    .doctors-main{
+        flex-direction: column;
+    }
+    
+}
+
+@media(max-width: 1120px){
+    .grids{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media(max-width: 480px){
+    .grids{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.mobile-menu .active p{
+    background-color: #5f6FFF;
+    padding: 4px 8px;
+    color: white;
+    border-radius: 2px;
+    white-space: nowrap;
+}
+

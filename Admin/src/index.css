@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+.sidebar .active{
+    background-color: rgb(201, 201, 233);
+    border-right: 5px solid blue;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
