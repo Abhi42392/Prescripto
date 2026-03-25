@@ -50,7 +50,7 @@ const Login = () => {
   return (
     <div className='flex justify-center mt-[10vh] text-base sm:text-lg text-slate-600'>
       <div className='border-2 border-gray-400 rounded-lg p-6 w-[400px]'>
-        {currState==="Login"?<h1 className='text-2xl font-medium text-black'>Login</h1>:<h1 className='text-2xl font-medium text-black'>Login/SignUp</h1>}
+        {currState==="Login"?<h1 className='text-2xl font-medium text-black'>Login</h1>:<h1 className='text-2xl font-medium text-black'>SignUp</h1>}
         <p>Please {currState==="Login"?`login`:`sign up`} to book appointment</p>
         
         <form onSubmit={submitHandler}>
